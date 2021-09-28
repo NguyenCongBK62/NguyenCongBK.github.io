@@ -1,0 +1,161 @@
+body {
+  background-color: rgb(185, 213, 214);
+  font-family: Arial, Sans-serif;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.item {
+  width: 260px;
+  height: 550px;
+  background-color: aliceblue;
+  position: relative;
+  margin-top: 15vh;
+}
+
+.image-title {
+  width: inherit;
+}
+
+.item-header {
+  background-image: var(--bg-image);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+}
+
+.title-content {
+  text-align: center;
+  margin: auto;
+  color: rgb(255, 255, 255);
+}
+
+.title-content-header {
+  text-align: center;
+  margin: auto auto 0 auto;
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+  font-weight: 100;
+  font-family: Arial, Sans-serif;
+  letter-spacing: 2px;
+}
+.title-content-description {
+  text-align: center;
+  font-size: 10px;
+  color: aliceblue;
+  margin-top: 0;
+}
+
+.price {
+  position: absolute;
+  top: -8%;
+  left: calc((100% - 80px) / 2);
+  border-radius: 100%;
+  z-index: 0;
+  background-color: aliceblue;
+  height: 80px;
+  width: 80px;
+  text-align: center;
+}
+
+.price-value {
+  margin-bottom: 0;
+  color: var(--text-color);
+}
+
+.price-description {
+  margin-top: 0;
+  font-size: 12px;
+  color: rgb(134, 130, 130);
+}
+
+.item-content {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.item-content-header {
+  padding: 0 10px;
+}
+
+.subtitle-first {
+  text-align: center;
+  font-size: 18px;
+  line-height: 8px;
+  color: rgb(117, 119, 121);
+}
+
+.subtitle-second {
+  text-align: center;
+  font-size: 14px;
+  line-height: 8px;
+  color: rgb(172, 175, 174);
+}
+
+table {
+  width: 100%;
+}
+
+td {
+  height: 40px;
+  font-size: 14px;
+  color: rgb(136, 138, 139);
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.buy-button {
+  margin-top: 10%;
+}
+
+button {
+  background-color: #fff;
+  border: 1px solid var(--border-color);
+  padding: 10px 20px;
+  color: var(--border-color);
+  cursor: pointer;
+}
+
+button#new-tour-button {
+  background-color: #562764;
+  border: 1px solid #562764;
+  padding: 10px 20px;
+  color: #fff;
+  cursor: pointer;
+}
+
+#new-tour-price.price {
+  background-color: #562764;
+}
+
+#new-tour-price-description.price-description {
+  color: #fff;
+}
+
+.new-tour-mark {
+  position: absolute;
+  top: -10px;
+  left: -10px;
+  background-image: url(newmark.png);
+  height: 50px;
+  width: 50px;
+  background-size: cover;
+}
+
+.new-mark-text {
+  text-align: center;
+  font-size: 12px;
+  padding-top: 10%; 
+  color: aliceblue;
+}
